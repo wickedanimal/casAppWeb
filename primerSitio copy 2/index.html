@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+        }
+        li{
+            background-color: rgb(32, 97, 24);
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        ol, div{
+            text-align: center;
+            margin: auto;
+        }
+        li a{
+            color: white;
+        }
+        div{
+            height: 300px;
+            width: 600px;
+            margin-bottom: 700px;
+        }
+        div img{
+            height: 250px;
+            width: 450px;
+            object-fit: cover;
+        }
+        div a{
+         display: block;
+         margin-top: 10px;
+         font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <ol id="menu">
+        <li><a href="#qs" target="_self">Quienes Somos</a></li>
+        <li><a href="#p" target="_self">Productos</a></li>
+        <li><a href="#cl" target="_self">Clientes</a></li>
+        <li><a href="#c" target="_self">Contacta</a></li>
+    </ol>
+    <div id="qs">
+        <p>Quienes Somos</p>
+        <img src="./assets/quienes-somos.jpg" alt="Representacion de quien somos">
+        <a href="#menu">VOLVER AL MENU</a>
+    </div>
+
+    <div id="p">
+        <p>Productos</p>
+        <img src="./assets/productos.jpg" alt="Imagen de productos que se ofrecen">
+        <a href="#menu">VOLVER AL MENU</a>
+    </div>
+
+    <div id="cl">
+        <p>Clientes</p>
+        <img src="./assets/clientes.jpg" alt="Clientes con los que trabajamos">
+        <a href="#menu">VOLVER AL MENU</a>
+    </div>
+
+    <div id="c">
+        <p>Contacta</p>
+        <img src="./assets/contacta.jpg" alt="informacion de contacto">
+        <a href="#menu">VOLVER AL MENU</a>
+    </div>
+</body>
+</html>
