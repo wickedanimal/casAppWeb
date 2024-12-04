@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacta</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        table{
+            background-color: rgb(32, 123, 243);
+            width: 600px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        td{
+            background-color: rgb(2, 62, 141);
+            width: 100px;
+        }
+        td a{
+            color: white;
+        }
+        div{
+            height: 300px;
+            background-color: rgb(89, 133, 190);
+            text-align: center;
+            width: 600px;
+        }
+        div img{
+            margin-top: 25px;
+            height: 250px;
+            width: 450px;
+            object-fit: cover;
+        }
+        .centrar{
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <!-- Empezamos con los sitios web. Vamos a realizar una navegacion a traves de tabla. OJO! LA NAVEGACION PROFESIONAL NO SE DEBE HACER CON TABLAS, POR TEMAS DE ACCESIBILIDAD -->
-    <table>
-        <tr>
-            <td><a href="index.html" target="_self">Quienes Somos</a></td>
-            <td><a href="productos.html" target="_self">Productos</a></td>
-            <td><a href="clientes.html" target="_self">Clientes</a></td>
-            <td><a href="contacta.html" target="_self">Contacta</a></td>
-        </tr>
-    </table>
-    <div><img src="./assets/contacta.jpg" alt=""></div>
+    <div class="centrar">
+        <!-- Empezamos con los sitios web. Vamos a realizar una navegacion a traves de tabla. OJO! LA NAVEGACION PROFESIONAL NO SE DEBE HACER CON TABLAS, POR TEMAS DE ACCESIBILIDAD -->
+        <table>
+            <tr>
+                <td><a href="index.html" target="_self">Quienes Somos</a></td>
+                <td><a href="productos.html" target="_self">Productos</a></td>
+                <td><a href="clientes.html" target="_self">Clientes</a></td>
+                <td><a href="contacta.html" target="_self">Contacta</a></td>
+            </tr>
+        </table>
+        <div><img src="./assets/contacta.jpg" alt="informacion de contacto"></div>
+    </div>
 </body>
 </html>
