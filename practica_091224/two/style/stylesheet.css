@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacion ul{
+    width: 900px;
+}
+
+.navegacion{
+    background-color: black;
+}
+
+.navegacion ul{
+    margin: auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.navegacion ul li{
+    display: inline-block;
+}
+
+.navegacion ul li a{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+.navegacion ul li a:hover{
+    background-color: blue;
+}
