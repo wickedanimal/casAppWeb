@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+body{
+    background-image: url(../img/aliceparallax.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
 .navegacion ul{
     width: 900px;
 }
