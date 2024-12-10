@@ -3,30 +3,52 @@
     padding: 0px;
 }
 
-body{
-    background-image: url(../img/aliceparallax.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
+/* --------------------------- Varios combinados */
+h2, h3{
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 .navegacion ul{
-    width: 900px;
+    width: 700px;
 }
+
+#sin, #dir, #com, #rep, #fot{
+    width: 700px;
+    margin: 35px auto 30px;
+    /* text-align: center; */
+}
+
+.sinopsis h2, .directores h2{
+    float: left;
+    width: 20%;
+    margin-bottom: 25px;
+}
+/* --------------------------- END Varios combinados */
 
 .navegacion{
     background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;   
 }
 
 .navegacion ul{
     margin: auto;
-    padding: 20px;
-    background-color: grey;
+    padding: 15px 0;
+    background: linear-gradient(to top, grey,white);
     border-radius: 20px;
+    text-align: center;
 }
 
 .navegacion ul li{
     display: inline-block;
+    border-right: 1px solid grey;
+}
+
+.navegacion ul li:last-child{
+    border-right: none;
 }
 
 .navegacion ul li a{
@@ -34,11 +56,92 @@ body{
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    color: #333;
     margin: auto;
-    padding: 20px 15px;
+    padding: 15px 15px;
 }
 
 .navegacion ul li a:hover{
-    background-color: blue;
+    background: radial-gradient(transparent, white);
+}
+
+
+p{
+    text-align: justify;
+    font-family: Newsreader, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.banner{
+    text-align: center;
+    padding: 80px 0 0;
+}
+
+.banner figure img{
+    box-shadow: 3px 3px 5px #333;
+}
+
+.paralax1{
+    height: 600px;
+    background-image: url(../img/aliceparallax.jpg);
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.paralax2{
+    height: 600px;
+    background-image: url(../img/parallax2.jpg);
+    background-attachment: fixed;  
+    background-size: cover;
+    clear: both;
+}
+
+.sinopsis .sinDer p{
+    width: 75%;
+    float: right;
+    margin-bottom: 25px;
+}
+
+.sinopsis .trailer{
+    position: relative;
+    clear: both;
+    padding-bottom: calc(var(--aspect-ratio, .5625) * 100%); 
+    height: 0;
+}
+
+.sinopsis .trailer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.directores figure img{
+    float: left;
+    clear: both;
+}
+
+.directores figure figcaption{
+    float: right;
+    width: 75%;
+}
+
+.directores .director1 figcaption p:last-child, .directores .director2 figcaption p:last-child{
+    margin-bottom: 25px;
+}
+
+.comentarios{
+    
 }
