@@ -11,20 +11,31 @@ h2, h3{
 }
 
 .navegacion ul{
-    width: 700px;
+    width: 800px;
 }
 
 #sin, #dir, #com, #rep, #fot{
-    width: 700px;
+    width: 800px;
     margin: 35px auto 30px;
-    /* text-align: center; */
+    clear: both;
 }
 
-.sinopsis h2, .directores h2{
+.sinopsis h2, .directores h2, .comentarios h2, .reparto h2, .fotos h2{
     float: left;
     width: 20%;
     margin-bottom: 25px;
 }
+
+.sinopsis .sinDer, .comentarios .comDer, .directores figure figcaption, .reparto .repDer, .fotos .fotDer{
+    width: 70%;
+    float: right;
+}
+
+.sinopsis .sinDer p, .comentarios .comDer, .directores .director1 figcaption p:last-child, .directores .director2 figcaption p:last-child, .reparto .repDer{
+    margin-bottom: 25px;
+}
+
+
 /* --------------------------- END Varios combinados */
 
 .navegacion{
@@ -64,7 +75,6 @@ h2, h3{
 .navegacion ul li a:hover{
     background: radial-gradient(transparent, white);
 }
-
 
 p{
     text-align: justify;
@@ -107,12 +117,6 @@ h3{
     clear: both;
 }
 
-.sinopsis .sinDer p{
-    width: 75%;
-    float: right;
-    margin-bottom: 25px;
-}
-
 .sinopsis .trailer{
     position: relative;
     clear: both;
@@ -133,15 +137,17 @@ h3{
     clear: both;
 }
 
-.directores figure figcaption{
-    float: right;
-    width: 75%;
+.comentarios .comDer p{
+    margin-bottom: 20px;
 }
 
-.directores .director1 figcaption p:last-child, .directores .director2 figcaption p:last-child{
-    margin-bottom: 25px;
+.fotos .fotDer img{
+    border: 2px solid #333;
+    width: 30%;
+    object-fit: contain;
 }
 
-.comentarios{
-    
+.fotos .fotDer img:hover{
+    filter: grayscale(80%);
+    cursor:zoom-in;
 }
