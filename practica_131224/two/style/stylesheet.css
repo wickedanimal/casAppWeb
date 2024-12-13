@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
-    color: #669BBC;
+    color: #03071e;
 }
 
 body{
@@ -19,7 +19,7 @@ main h1{
 form{
     width: 600px;
     margin: auto;
-    background-color: #003049;
+    background-color: #f48c06;
     padding: 25px 20px;
 }
 
@@ -30,6 +30,7 @@ label{
     line-height: 25px;
     text-transform: capitalize;
     padding: 5px;
+    text-align: right;
 }
 input{
     clear:both;
@@ -50,15 +51,17 @@ div{
 
 div button{
     padding: 10px 35px;
-    color: #2b2d42;
-    background-color: #C1121F;
+    color: #f48c06;
+    background-color: #6a040f;
     font-weight: 700;
     font-size: 20px;
-    border: none;
+    border: 5px #6a040f solid;
     border-radius: 20px;
 }
 
 div button:hover{
-    background-color: #780000;
-    color: #FDF0D5;
+    background-color: #f48c06;
+    color: #6a040f;
+    border: 5px #6a040f solid;
+    border-radius: 20px;
 }
