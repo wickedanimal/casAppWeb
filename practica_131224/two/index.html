@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/stylesheet.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Formulario</title>
+</head>
+
+<body>
+  
+  <main>
+    <h1>Envio de datos</h1>
+    <form action="">
+
+      <label for="nom">Nombres</label>
+      <input type="text" name="nom" id="" placeholder="Juan Martin">
+
+      <label for="ape">Apellidos</label>
+      <input type="text" name="ape" id="" placeholder="Perez Alvarez">
+
+      <label for="dob">Fecha nacimiento</label>
+      <input type="date" name="dob" id="">
+
+      <label for="eda">Edad</label>
+      <input type="text" name="eda" id="" pattern="[0-9]{3}" placeholder="Introduzca sus años">
+
+      <label for="cod">Codigo Postal</label>
+      <input type="number" name="cod" id="" pattern="[0-9]{5}" placeholder="281010">
+
+      <label for="dni">DNI</label>
+      <input type="text" name="dni" id="" pattern="[0-9]{8}-[a-z]{1}" placeholder="12345678Z">
+
+      <label for="ema">Correo electronico</label>
+      <input type="email" name="ema" id="" placeholder="email@correo.com">
+
+      <label for="web">Pagina web</label>
+      <input type="url" name="web" id="" placeholder="http://url.com">
+
+      <label for="pai">Pais</label>
+      <input list="pai" name="pai" placeholder="Seleccione un pais">
+      <datalist id="pai">
+        <option value="Afganistán">
+        <option value="Albania">
+        <option value="Alemania">
+        <option value="Andorra">
+        <option value="Angola">
+        <option value="Antigua y Barbuda">
+        <option value="Arabia Saudita">
+        <option value="Argelia">
+        <option value="Argentina">
+        <option value="Armenia">
+        <option value="Australia">
+        <option value="Austria">
+        <option value="Azerbaiyán">
+        <option value="Bahamas">
+        <option value="Bahréin">
+        <option value="Bangladés">
+        <option value="Barbados">
+        <option value="Bielorrusia">
+        <option value="Bélgica">
+        <option value="Belice">
+        <option value="Benín">
+        <option value="Bután">
+        <option value="Bolivia">
+        <option value="Bosnia-Herzegovina">
+        <option value="Botsuana">
+        <option value="Brasil">
+        <option value="Brunéi">
+        <option value="Bulgaria">
+        <option value="Burkina Faso">
+        <option value="Burundi">
+        <option value="Cabo Verde">
+        <option value="Camboya">
+        <option value="Camerún">
+        <option value="Canadá">
+        <option value="Chad">
+        <option value="República Checa">
+        <option value="Chequia">
+        <option value="Chile">
+        <option value="China">
+        <option value="Chipre">
+        <option value="Colombia">
+        <option value="Comoras">
+        <option value="Congo">
+        <option value="República Democrática del Congo">
+        <option value="Corea del Norte">
+        <option value="Corea del Sur">
+        <option value="Costa Rica">
+        <option value="Costa de Marfil">
+        <option value="Croacia">
+        <option value="Cuba">
+        <option value="Dinamarca">
+        <option value="Yibuti">
+        <option value="Dominica">
+        <option value="Ecuador">
+        <option value="Egipto">
+        <option value="El Salvador">
+        <option value="Emiratos Árabes Unidos">
+        <option value="Eritrea">
+        <option value="Eslovaquia">
+        <option value="Eslovenia">
+        <option value="España">
+        <option value="Estados Unidos">
+        <option value="Estonia">
+        <option value="Etiopía">
+        <option value="Fiyi">
+        <option value="Filipinas">
+        <option value="Finlandia">
+        <option value="Francia">
+        <option value="Gabón">
+        <option value="Gambia">
+        <option value="Georgia">
+        <option value="Ghana">
+        <option value="Granada">
+        <option value="Grecia">
+        <option value="Guatemala">
+        <option value="Guinea">
+        <option value="Guinea-Bissau">
+        <option value="Guinea Ecuatorial">
+        <option value="Guyana">
+        <option value="Haití">
+        <option value="Honduras">
+        <option value="Hungría">
+        <option value="India">
+        <option value="Indonesia">
+        <option value="Irán">
+        <option value="Iraq">
+        <option value="Irlanda">
+        <option value="Islandia">
+        <option value="Israel">
+        <option value="Italia">
+        <option value="Jamaica">
+        <option value="Japón">
+        <option value="Jordania">
+        <option value="Kazajistán">
+        <option value="Kenia">
+        <option value="Kirguistán">
+        <option value="Kiribati">
+        <option value="Kuwait">
+        <option value="Laos">
+        <option value="Lesoto">
+        <option value="Letonia">
+        <option value="Líbano">
+        <option value="Liberia">
+        <option value="Libia">
+        <option value="Liechtenstein">
+        <option value="Lituania">
+        <option value="Luxemburgo">
+        <option value="Macedonia">
+        <option value="Madagascar">
+        <option value="Malasia">
+        <option value="Malaui">
+        <option value="Maldivas">
+        <option value="Mali / Malí">
+        <option value="Malta">
+        <option value="Marruecos">
+        <option value="Islas Marshall">
+        <option value="Mauricio">
+        <option value="Mauritania">
+        <option value="México">
+        <option value="Micronesia">
+        <option value="Moldavia">
+        <option value="Mónaco">
+        <option value="Mongolia">
+        <option value="Montenegro">
+        <option value="Mozambique">
+        <option value="Birmania">
+        <option value="Namibia">
+        <option value="Nauru">
+        <option value="Nepal">
+        <option value="Nicaragua">
+        <option value="Níger">
+        <option value="Nigeria">
+        <option value="Noruega">
+        <option value="Nueva Zelanda">
+        <option value="Omán">
+        <option value="Países Bajos">
+        <option value="Pakistán">
+        <option value="Palaos">
+        <option value="Panamá">
+        <option value="Papúa Nueva Guinea">
+        <option value="Paraguay">
+        <option value="Perú">
+        <option value="Polonia">
+        <option value="Portugal">
+        <option value="Qatar">
+        <option value="Reino Unido">
+        <option value="República Centroafricana">
+        <option value="República Dominicana">
+        <option value="Rumanía / Rumania">
+        <option value="Rusia">
+        <option value="Ruanda">
+        <option value="San Cristóbal y Nieves">
+        <option value="Islas Salomón">
+        <option value="Samoa">
+        <option value="San Marino">
+        <option value="Santa Lucía">
+        <option value="Ciudad del Vaticano">
+        <option value="Santo Tomé y Príncipe">
+        <option value="San Vicente y las Granadinas">
+        <option value="Senegal">
+        <option value="Serbia">
+        <option value="Seychelles">
+        <option value="Sierra Leona">
+        <option value="Singapur">
+        <option value="Siria">
+        <option value="Somalia">
+        <option value="Sri Lanka">
+        <option value="Sudáfrica">
+        <option value="Sudán">
+        <option value="Sudán del Sur">
+        <option value="Suecia">
+        <option value="Suiza">
+        <option value="Surinam">
+        <option value="Suazilandia">
+        <option value="Tailandia">
+        <option value="Tanzania">
+        <option value="Tayikistán">
+        <option value="Timor Oriental">
+        <option value="Togo">
+        <option value="Tonga">
+        <option value="Trinidad y Tobago">
+        <option value="Túnez">
+        <option value="Turkmenistán">
+        <option value="Turquía">
+        <option value="Tuvalu">
+        <option value="Ucrania">
+        <option value="Uganda">
+        <option value="Uruguay">
+        <option value="Uzbekistán">
+        <option value="Vanuatu">
+        <option value="Venezuela">
+        <option value="Vietnam">
+        <option value="Yemen">
+        <option value="Zambia">
+        <option value="Zimbabue">
+      </datalist>
+
+      <div>
+
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+  </main>
+</body>
+
+</html>
