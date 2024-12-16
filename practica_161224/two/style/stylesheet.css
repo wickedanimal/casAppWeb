@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 120px;
+    height: 120px;
+}
+
+h1{
+    color: white;
+}
+
+.a{
+    background-color: red;
+}
+
+.b{
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.c{
+    background-color: green;
+}
