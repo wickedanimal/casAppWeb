@@ -26,3 +26,24 @@ h1{
 .c{
     background-color: green;
 }
+
+.grey{
+    width: 500px;
+    height: 500px;
+    border: 2px solid grey;
+    position: relative;
+    /* background-color: grey; */
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.grey .img{
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+     top:150px;
+}
+
+.grey p{
+margin-bottom: 25px;}
