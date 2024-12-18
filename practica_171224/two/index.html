@@ -4,53 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/stylesheet.css">
     <title>Formulario</title>
 </head>
 
 <body>
     <main>
-        <h1>Aprovecha estos dias de descuento.</h1>
-        <form action="">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-            </fieldset>
+        <header>
+            <h1>Aprovecha estos dias de descuento.</h1>
+        </header>
+        <section>
+            <div id="logo"><img src="img/logo.png" alt=""></div>
+            <form action="">
+                <fieldset class="personal">
+                    <legend>Datos personales</legend>
 
-            <fieldset>
-                <legend>Encargar el zapato</legend>
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-            </fieldset>
+                    <label for="fname">Nombre<span>*</span></label>
+                    <input type="text" placeholder="Juan Martin" name="fname" required>
 
-            <fieldset>
-                <legend>Forma de pago</legend>
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-            </fieldset>
+                    <label for="lname">Apellidos<span>*</span></label>
+                    <input type="text" placeholder="Perez Alvarez" name="lname" required>
 
-        </form>
-        <input type="button" value="Enviar">
-        <input type="button" value="Comprar">
-        <input type="reset" value="Restableceer">
+                    <label for="tel">Telefono<span>*</span></label>
+                    <input type="tel" name="tel" size="9" placeholder="613789456" pattern="[0-9]{9}" required>
+
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" placeholder="email@correo.com" required>
+                </fieldset>
+
+                <fieldset class="shoe">
+                    <legend>Encargar el zapato</legend>
+
+                    <label for="zapatos">Elige tu modelo</label>
+                    <input list="zapatos" name="zapatos" placeholder="Bailarinas">
+                    <datalist id="zapatos">
+                        <option value="Alpargatas">
+                        <option value="Bailarinas">
+                        <option value="Botines">
+                        <option value="Mary Jane">
+                        <option value="Merceditas">
+                        <option value="Oxford">
+                        <option value="Sleepers">
+                    </datalist>
+
+                    <label for="col" class="col">Elige el color</label>
+                    <input type="color" name="col" class="col">
+
+                    <label for="fecha" class="fecha">Fecha de entrega</label>
+                    <input type="date" name="fecha" min="2024-12-18" class="fecha">
+
+                    <label for="time" class="time">Hora de entrega</label>
+                    <input type="time" name="time" class="time">
+                </fieldset>
+
+                <fieldset class="pay">
+                    <legend>Forma de pago</legend>
+                    <label for="">Forma de pago</label>
+                    <input type="radio" name="cash" class="cash">
+                    <label for="cash" class="cash">Efectivo</label>
+                    <input type="radio" name="card" class="card">
+                    <label for="card" class="card">Tarjeta</label>
+                    <label for="cuenta" class="cuenta">Datos de la cuenta</label>
+                    <input type="text" name="cuenta" class="cuenta">
+                </fieldset>
+
+                <aside>
+                    <input type="submit" value="Enviar" class="enviar">
+                    <label for="submit" class="enviar">Comprar</label><br>
+                    <!-- <input type="button" value="Comprar" class="comprar"> -->
+                    <input type="reset" value="Restablecer" class="borrar">
+                </aside>
+            </form>
+        </section>
+
     </main>
 </body>
 
