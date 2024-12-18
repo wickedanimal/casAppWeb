@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-position: top right;
+    background-image: url(../img/tacon.png);
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 1000px;
+    margin:auto;
+    font-size: 10px;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+fieldset{
+    margin: 25px 0px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+fieldset legend{
+    font-size: 1.5rem;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2rem;
+    margin: 25px 0;
+    text-align: center;
+}
+
+label{
+    width: 25%;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+label span{
+    color: red;
+}
+
+input{
+    width: 60%;
+    padding: 0.3rem;
+    margin: 0.2rem 0;
+}
+
+input:last-child{
+    margin-bottom: 1rem;
+}
+
+.shoe input{
+    width: 15%;
+}
+
+.shoe input{
+    width: 20% ;
+}
+
+.shoe label.col, .shoe label.time{
+    width: 17%;
+}
+
+.pay input.cash, .pay input.card{
+    width:3%;
+}
+
+.pay label.cash, .pay label.card{
+    width: 10%;
+    text-align: left;
+}
+
+.pay label.card{
+    margin: 0 30% 5px 0;
+}
+
+form input.enviar, form input.comprar, form input.borrar{
+    width: auto;
+}
+
+aside{
+    width: 100%;
+    text-align: center;
+}
+
+form input.enviar{
+    background-color: red;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    background-image: url(../img/taconTransparente.png);
+    padding: 15px 60px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 50px;
+    border-radius: 15px;
+}
+
+form label.enviar{
+    width: 10%;
+    text-align: left;
+}
+
+form input.borrar{
+    margin-right: 90px;
+}
+
+#logo img{
+    position: absolute;
+    transform: rotate(-15deg);
+    top: 25%;
+    left: 5%;
+    width: 400px;
+}
