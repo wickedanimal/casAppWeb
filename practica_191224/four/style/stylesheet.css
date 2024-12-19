@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:lightgrey;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    "cab cab cab cab cab"
+    "menu . main main main"
+    "menu pie pie pie pie";
+    margin: 20px auto;
+    width: 80%;
+}
+
+#cab{
+    background-color: aquamarine;
+    grid-area: cab;
+}
+
+#pie{
+    background-color: blueviolet;
+    grid-area: pie;
+}
+
+#menu{
+    background-color: chocolate;
+    grid-area: menu;
+}
+
+#principal{
+    background-color: coral;
+    grid-area: main;
+}
