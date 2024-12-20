@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:lightgrey;
+    display: grid;
+    grid-template-columns: 10% repeat(3,30%);
+    grid-template-rows: 100px 400px 300px 100px;
+    row-gap: 1em;
+    grid-template-areas: 
+    ". h h h"
+    ". n m s"
+    ". s s s"
+    ". f f f";
+    margin: 20px auto;
+    width: 90%;
+}
+
+#h{
+    background-color: red;
+    grid-area: h;
+}
+nav{
+    background-color: aqua;
+    grid-area: n;
+}
+main{
+    background-color: #999;
+    grid-area: m;
+}
+section{
+    background-color: bisque;
+    grid-area: s;
+}
+footer{
+    background-color: blueviolet;
+    grid-area: f;
+}
+
+
+.face, .insta, .x{
+    width: 62px;
+    height: 62px;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+}
+
+.face{
+    background-image: url('../img/social-media-2083456_1920.png');
+    background-position: -12px -78px;
+}
+
+.insta{
+    background-image: url('../img/social-media-2083456_1920.png');
+    background-position: -78px -14px;
+}
+
+.x{
+    background-image: url('../img/social-media-2083456_1920.png');
+    background-position: -78px -78px;
+}

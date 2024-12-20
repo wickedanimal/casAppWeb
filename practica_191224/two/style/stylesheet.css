@@ -31,5 +31,56 @@ form{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
-    /* grid-template-areas: ; */
+    grid-template-areas: "nombre"
+                         "inputNombre"
+                         "Telf"
+                         "inputTelf"
+                         "cursos"
+                         "cursosSelect"
+                         "email"
+                         "inputEmail"
+                         "textarea"
+                         "inputTa"
+                         "select"
+                         "submit";
+    gap: .5rem;
+}
+
+.name{
+    grid-area: nombre;
+}
+
+.inputNombre{
+    grid-area: inputNombre;
+}
+.telf{
+    grid-area: telf;
+}
+.inputTelf{
+    grid-area: inputTelf;
+}
+.email{
+    grid-area: email;
+}
+.inputEmail{
+    grid-area: inputEmail;
+}
+.ta{
+    grid-area: textarea;
+}
+.inputTextarea{
+    grid-area: inputTa;
+    padding: .3rem;
+}
+.select{
+    grid-area: select;
+}
+.submit{
+    grid-area: submit;
+}
+.cursos{
+    grid-area: cursos;
+}
+.cursos-select{
+    grid-area: cursosSelect;
 }
