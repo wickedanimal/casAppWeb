@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 150px auto;
+            text-align: center;
+            background-color: #333;
+        }
+
+        img{
+            margin: 200px 0 30px;
+            width: 200px;
+        }
+        h3{
+            color: gray;
+        }
+    </style>
+    <!-- <script>
+        let nom = prompt("di tu nombre");
+        function bienvenido(n){
+            return "Hola " + n;
+        }
+        
+    </script> -->
+
+<!-- <script>
+    let a = Number(prompt("Primer numero"));
+    let b = Number(prompt("Segundo numero"));
+
+    function sum(x, y){
+        return x+y;
+    }
+</script> -->
+
+<script>
+    function on(){
+        document.body.style.backgroundColor='#ffda35';
+        document.getElementById('off').src='img/turnOn_.png';
+    }
+
+    function off(){
+        document.body.style.backgroundColor='#333';
+        document.getElementById('off').src='img/turnOff_.png';
+    }
+</script>
+
+</head>
+<body>
+
+
+        <img src="img/turnOff_.png" id="off" onmouseover="on()"; onmouseout="off()";/>
+        <h3>Pasa el cursor por encima de la imagen</h3>
+
+        
+    
+    
+    <!-- <h1>Calculadora</h1>
+    <button id="suma" onclick="document.getElementById('resultado').innerHTML=sum(a,b)";>Sumar</button>
+    <h1 id="resultado"></h1> -->
+
+
+
+    <!-- <h1 id="saludo"></h1>
+    <script>
+        document.getElementById("saludo").innerHTML=bienvenido(nom);
+    </script> -->
+</body>
+</html>

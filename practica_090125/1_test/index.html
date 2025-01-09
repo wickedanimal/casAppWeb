@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 250px;
+            height: 50px;
+            border: thick solid orangered;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="elem" onmouseover="this.style.borderColor='black'"; onmouseout="this.style.borderColor='orangered'">
+        <p>Contenido DIV 1</p>
+    </div>
+    <div id="elem2" onmouseover="this.style.borderColor='black'"; onmouseout="this.style.borderColor='orangered'">
+        <p>Contenido DIV 2</p>
+    </div>
+    <div id="elem3" onmouseover="this.style.borderColor='black'"; onmouseout="this.style.borderColor='orangered'">
+        <p>Contenido DIV 3</p>
+    </div>
+    <div id="elem4" onmouseover="document.getElementById('elem4').style.borderColor='black'"; onmouseout="document.getElementById('elem4').style.borderColor='orangered'">
+        <p>Contenido DIV 4</p>
+    </div>
+    <!-- <script>
+        let n = prompt("Cual es tu nombre?");
+        alert("Bienvenido al curso de web " + n);
+    </script> -->
+</body>
+</html>
