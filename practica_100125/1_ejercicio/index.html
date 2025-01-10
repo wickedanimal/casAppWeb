@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>Ejercicio 10/01</title>
+
+    <script>
+        function hov(){
+            document.body.style.backgroundColor='pink';
+            // document.getElementById('bike').src='img/image11-2.jpg';
+            document.getElementById('bike').style.border="25px solid white";
+            document.getElementById('bike').style.webkitFilter="blur(2px)";
+        }
+    
+        function hovOff(){
+            document.body.style.backgroundColor='';
+            // document.getElementById('bike').src='img/image11-1.jpg';
+            document.getElementById('bike').style.webkitFilter="";
+            document.getElementById('bike').style.border="";
+        }
+
+        function pregunta(){
+            let nom = prompt("Escribe tu nombre");
+            let mat = prompt("Di que curso quieres cursar");
+            let tel = prompt("Deja tu telefono");
+
+            document.getElementById('bike').style.webkitFilter="opacity(0.2)";
+            document.getElementById('bike').src='img/trans.png';
+
+            document.getElementById('text').innerHTML="Hola " + nom + " te has inscrito en " + mat + " te contactaremos al siguiente numero " + tel;
+        }
+
+    </script>
+</head>
+<body>
+    <div id="container">
+        <img src="img/image11-1.jpg" id="bike" onmouseover="hov()"; onmouseout="hovOff()"; onclick="pregunta()";>
+        <p id="text"></p>
+    </div>
+
+</body>
+</html>
