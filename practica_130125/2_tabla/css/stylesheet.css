@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    text-align: center;
+    background-color: yellow;
+    border-collapse: collapse;
+    margin: 15px auto;
+}
+
+td, tr{
+    border: 2px solid #333;
+}
+
+td{
+    width: 98px;
+    height: 98px;
+}
+
+p{
+    font-family: "Fredericka the Great", serif;
+    font-size: 80px;
+}

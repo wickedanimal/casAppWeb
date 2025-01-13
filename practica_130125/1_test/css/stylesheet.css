@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 600px;
+    margin: 25px auto 0;
+    display: grid;
+    grid-template-areas: "fo fo fo fo"
+                         "texto texto texto texto";          
+    gap: 15px 10px;  
+}
+form{
+    width: 600px;
+    margin: 25px auto 0;
+    display: grid;
+    grid-template-areas: "num1Lbl num1Lbl num1 num1 "
+                         "num2Lbl num2Lbl num2 num2"
+                         "btnS btnR btnM btnD";         
+    gap: 15px 10px;  
+}
+#fo{
+    grid-area: fo;
+}
+#num1Lbl{
+    grid-area: num1Lbl;
+}
+#num2Lbl{
+    grid-area: num2Lbl;
+}
+#num1{
+    grid-area: num1;
+}
+#num2{
+    grid-area: num2;
+}
+#btnS{
+    grid-area: btnS;
+} 
+#btnR{
+    grid-area: btnR;
+} 
+#btnM{
+    grid-area: btnM;
+} 
+#btnD{
+    grid-area: btnD;
+}
+#texto{
+    grid-area: texto;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #333;
+    color: white;
+}
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    padding: 10px 15px;
+    /* margin-top: 10px; */
+}
+label{
+    text-align: right;            
+}
+#result {
+    font-weight: 900;
+    color: crimson;
+}

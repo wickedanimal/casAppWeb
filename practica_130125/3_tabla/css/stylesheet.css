@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: #666;
+    border-collapse: collapse;
+    margin: 15px auto;
+}
+
+td, tr{
+    border: 2px solid #333;
+}
+
+td{
+    font-family: "Fredericka the Great", serif;
+    font-size: 30px;
+    color: white;
+}
+
+td p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+td button{
+    border: 0;
+    padding: 10px 25px;
+    background-color: white;
+}
+
+td button:hover{
+    background-color: #333;
+    color: white;
+}
