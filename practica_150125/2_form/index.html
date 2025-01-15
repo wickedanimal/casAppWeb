@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selecciona tu coche</h1>
+    <form action="#" name="co">
+        <div>
+            <label for="modelo">Modelo:</label>
+            <select name="modelo" id="modelo">
+                <option value="Peugeot 2008">Peugeot 2008</option>
+                <option value="Peugeot 208">Peugeot 208</option>
+                <option value="Peugeot 3008">Peugeot 3008</option>
+                <option value="Peugeot 308">Peugeot 308</option>
+                <option value="Peugeot Rifter">Peugeot Rifter</option>
+                <option value="Peugeot Traveller">Peugeot Traveller</option>
+                <option value="Peugeot 508">Peugeot 508</option>
+                <option value="Peugeot 5008">Peugeot 5008</option>
+            </select>
+        </div>
+        <div>
+            <label>Color:</label>
+            <input type="radio" name="color" value="verde" checked>
+            <label for="verde" class="color">verde</label>
+            <input type="radio" name="color" value="negro">
+            <label for="negro" class="color">negro</label>
+            <input type="radio" name="color" value="rojo">
+            <label for="rojo" class="color">rojo</label>
+            <input type="radio" name="color" value="blanco">
+            <label for="blanco" class="color">blanco</label>
+            <input type="radio" name="color" value="azul">
+            <label for="azul" class="color">azul</label>
+        </div>
+        <div>
+            <label for="fecha">Fecha de entrega:</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <div>
+            <input type="button" value="Aceptar" id="listo" onclick="coche()">
+        </div>
+    </form>
+</body>
+</html>
