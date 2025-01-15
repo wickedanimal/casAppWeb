@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+.color{
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+div{
+    display: block;
+    margin: 20px auto 5px;
+}
+
+#listo{
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 25px;
+    
+}
+
+h1,form{
+    width: 900px;
+    margin: 25px auto;
+    text-align: center;
+}

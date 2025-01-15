@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elige tu bolso</h1>
+    <form action="#" id="formBolso">
+        <input type="radio" name="bolso" value="dalia" checked>
+        <label for="dalia">Dalia</label><br>
+        <input type="radio" name="bolso" value="azalea">
+        <label for="azalea">Azalea</label><br>
+        <input type="radio" name="bolso" value="bolso3">
+        <label for="bolso3">bolso3</label><br>
+        <input type="radio" name="bolso" value="bolso4">
+        <label for="bolso4">bolso4</label><br>
+        <input type="radio" name="bolso" value="bolso5">
+        <label for="bolso5">bolso5</label><br>
+        <select name="tamano" id="tam">
+            <option value="pq" selected>Pequeño</option>
+            <option value="md">Mediano</option>
+            <option value="gr">Grande</option>
+        </select>
+
+        <input type="button" value="Calcular precio" onclick="promo(bolso.value, tam.value)">
+    </form>
+</body>
+</html>
