@@ -5,7 +5,7 @@ function test() {
 
     for(let i = 0; i < nom.length; i++){
         not[i] = prompt("Nota de "+nom[i]);
-        let text = "<td id='nombre'>" + nom[i] + "</td><td id='notas'>" + not[i] + "</td>"
+        let text = "<tr><td>" + nom[i] + "</td><td>" + not[i] + "</td></tr>"
         document.getElementById("alumno").innerHTML+=text;
         // x.innerHTML+=("<tr>" + text + "</tr>");
         // document.getElementById("nombre").innerHTML=nom[i];
