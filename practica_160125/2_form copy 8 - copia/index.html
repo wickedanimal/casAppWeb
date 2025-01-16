@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+<form action="#">
+    <input type="radio" name="color" id="one" value="red green blue">
+    <label>Rojo, Verde y Azul</label>
+    <input type="radio" name="color" id="two" value="yellow purple orange">
+    <label>Amarillo, Morado y Naranja</label>
+    <input type="radio" name="color" id="one" value="grey dimgrey black">
+    <label>Escala de grises</label>
+    <div id="container">
+        <div id="pr" class="box"><h2 id="prh2">Primero</h2></div>
+        <div id="sg" class="box"><h2 id="sgh2">Segundo</h2></div>
+        <div id="tr" class="box"><h2 id="trh2">Tercero</h2></div>
+    </div>
+    <input type="button" value="Mostrar" onclick="showColors(color.value)">
+    <input type="button" value="Invertir" onclick="revertColors(color.value)">
+</form>
+</body>
+</html>
