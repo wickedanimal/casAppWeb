@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+label{
+    margin: 10px 5px 10px 25px;
+}
+
+div#container{
+    width: 100px;
+    height: 42px;
+    padding: 8px 15px;
+    margin: 20px auto;
+    border: crimson solid 2px;
+}
+
+.btn{
+    width: 100px;
+    padding: 8px 15px;
+    border: crimson solid 2px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: crimson;
+}

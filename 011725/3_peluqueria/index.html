@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Peluqueria</h1>
+    <form action="#" id="myForm">
+        <div id="containerFlex">
+            <label id="lblNom">
+                <span>Nombre:</span> 
+                <input type="text" name="nom" id="nom" required placeholder="Martin">
+            </label>
+            <label id="lblApe">
+                <span>Apellido:</span> 
+                <input type="text" name="ape" id="ape" required placeholder="Lopez Serrano">
+            </label>
+            <label id="lblTel">
+                <span>Telefono:</span> 
+                <input type="tel" name="tel" id="tel" required placeholder="+34 63456789">
+            </label>
+            
+            <div id="tableCon">
+                <label id="lblLav" class="tit">
+                    <span>Lavado</span> 
+                </label>
+                <label id="lblCor" class="tit">
+                    <span>Corte</span> 
+                </label>
+                <label id="lblTen" class="tit">
+                    <span>Teñir</span> 
+                </label>
+                <label id="lblMan" class="tit">
+                    <span>Manicura</span> 
+                </label>
+
+                <input type="button" value="¿Quieres un Lavado?" id="btnLav">
+                <input type="button" value="¿Que tipo de Corte?" id="btnCor">
+                <input type="button" value="¿Vas a teñirte?" id="btnTen">
+                <input type="button" value="¿Quieres un Lavado?" id="btnMan">
+                <input type="button" value="¿Quieres un Lavado?" id="btnMan">
+                <input type="button" value="¿Quieres un Lavado?" id="btnMan">
+            </div>
+
+            <input type="button" value="Enviar" onclick="enviar()" class="btn">
+        </div>
+    </form>
+</body>
+
+</html>
