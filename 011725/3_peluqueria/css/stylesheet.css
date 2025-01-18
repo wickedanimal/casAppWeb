@@ -19,11 +19,11 @@ h1 {
     text-align: center;
 }
 
-#containerFlex {
+#containerGrid {
     display: grid;
     gap: 10px 15px;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr 50px 2fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 250px 2fr 1fr;
 }
 
 label {
@@ -31,17 +31,17 @@ label {
 }
 
 #lblNom{
-    grid-column: 1/3;
+    grid-column: 1/span 4;
     grid-row: 1/2;
 }
 
 #lblApe{
-    grid-column: 3/6;
+    grid-column: 5/span 4;
     grid-row: 1/2;
 }
 
 #lblTel{
-    grid-column: 6/8;
+    grid-column: 9/span 4;
     grid-row: 1/2;
 }
 
@@ -61,15 +61,44 @@ label {
 }
 
 #tableCon{
-    background-color: crimson;
-    display: grid;
-    /* grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr 50px 2fr 1fr; */
+    grid-column: 1/13;
     grid-row: 2/3;
-    grid-column: 1/8;
 }
 
-.tit span{
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: black solid 1px;
+    /* text-align: center; */
+}
+
+tbody tr td input{
+    display: block;
+    margin: 10px auto;
+    /* height: 150px; */
+}
+
+tbody tr td img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    object-position: top;
+}
+tr, th, td {
+border: black solid 1px;
+}
+/* #tableCon{
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 50px 2fr 1fr;
+    grid-row: 2/3;
+    grid-column: 1/8;
+} */
+
+/* .tit span{
     color: white; 
     font-weight: 600;
     font-size: 13px;
@@ -84,7 +113,7 @@ label {
 #lblMan{
     grid-column: 5/8;
     grid-row: 2/3;
-}
+} */
 
 
 
@@ -124,7 +153,16 @@ label>span {
     place-self: center;
 }
 
-.btn:hover {
+.btn2 {
+    padding: 5px 15px;
+    border: crimson solid 2px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    place-self: center;
+}
+
+.btn:hover, .btn2:hover  {
     background-color: white;
     color: crimson;
 }

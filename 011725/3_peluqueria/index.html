@@ -12,7 +12,7 @@
 <body>
     <h1>Peluqueria</h1>
     <form action="#" id="myForm">
-        <div id="containerFlex">
+        <div id="containerGrid">
             <label id="lblNom">
                 <span>Nombre:</span> 
                 <input type="text" name="nom" id="nom" required placeholder="Martin">
@@ -27,28 +27,36 @@
             </label>
             
             <div id="tableCon">
-                <label id="lblLav" class="tit">
-                    <span>Lavado</span> 
-                </label>
-                <label id="lblCor" class="tit">
-                    <span>Corte</span> 
-                </label>
-                <label id="lblTen" class="tit">
-                    <span>Teñir</span> 
-                </label>
-                <label id="lblMan" class="tit">
-                    <span>Manicura</span> 
-                </label>
-
-                <input type="button" value="¿Quieres un Lavado?" id="btnLav">
-                <input type="button" value="¿Que tipo de Corte?" id="btnCor">
-                <input type="button" value="¿Vas a teñirte?" id="btnTen">
-                <input type="button" value="¿Quieres un Lavado?" id="btnMan">
-                <input type="button" value="¿Quieres un Lavado?" id="btnMan">
-                <input type="button" value="¿Quieres un Lavado?" id="btnMan">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lavado</th>
+                            <th>Corte</th>
+                            <th>Teñir</th>
+                            <th colspan="2">Manicura</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="button" value="¿Quieres un Lavado?" id="btnLav" class="btn2"></td>
+                            <td><input type="button" value="¿Que tipo de Corte?" id="btnCor" class="btn2"></td>
+                            <td><input type="button" value="¿Vas a teñirte?" id="btnTen" class="btn2"></td>
+                            <td>
+                                <input type="button" value="Porcelana Roja" id="btnPRoja" class="btn2">
+                                <input type="button" value="Por. Francesa" id="btnPFrancesa" class="btn2">
+                                <input type="button" value="Borrar" id="btnBorrar" class="btn2">
+                            </td>
+                            <td><img src="img/frenchNails.avif" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <!-- 
+
+                
 
             <input type="button" value="Enviar" onclick="enviar()" class="btn">
+            -->
         </div>
     </form>
 </body>
