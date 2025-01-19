@@ -15,15 +15,15 @@
         <div id="containerGrid">
             <label id="lblNom">
                 <span>Nombre:</span> 
-                <input type="text" name="nom" id="nom" required placeholder="Martin">
+                <input type="text" name="nom" id="nom" placeholder="Martin">
             </label>
             <label id="lblApe">
                 <span>Apellido:</span> 
-                <input type="text" name="ape" id="ape" required placeholder="Lopez Serrano">
+                <input type="text" name="ape" id="ape" placeholder="Lopez Serrano">
             </label>
             <label id="lblTel">
                 <span>Telefono:</span> 
-                <input type="tel" name="tel" id="tel" required placeholder="+34 63456789">
+                <input type="tel" name="tel" id="tel" placeholder="+34 63456789">
             </label>
             
             <div id="tableCon">
@@ -38,25 +38,27 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="button" value="¿Quieres un Lavado?" id="btnLav" class="btn2"></td>
-                            <td><input type="button" value="¿Que tipo de Corte?" id="btnCor" class="btn2"></td>
-                            <td><input type="button" value="¿Vas a teñirte?" id="btnTen" class="btn2"></td>
+                            <td><input type="button" value="¿Quieres un Lavado?" id="btnLav" class="btn2" onclick="lavar()"></td>
+                            <td><input type="button" value="¿Que tipo de Corte?" id="btnCor" class="btn2" onclick="cortar()"></td>
+                            <td><input type="button" value="¿Vas a teñirte?" id="btnTen" class="btn2" onclick="tenir()"></td>
                             <td>
-                                <input type="button" value="Porcelana Roja" id="btnPRoja" class="btn2">
-                                <input type="button" value="Por. Francesa" id="btnPFrancesa" class="btn2">
-                                <input type="button" value="Borrar" id="btnBorrar" class="btn2">
+                                <input type="button" value="Porcelana Roja" id="btnPRoja" class="btn2" onclick="pRojaClick()" onmouseover="pRojaOver()" onmouseout="pRojaOut()">
+                                <input type="button" value="Por. Francesa" id="btnPFrancesa" class="btn2" onclick="pFrancesaClick()" onmouseover="pFrancesaOver()" onmouseout="pFrancesaOut()">
+                                <input type="button" value="Borrar" id="btnBorrar" class="btn2" onclick="borrar()">
                             </td>
-                            <td><img src="img/frenchNails.avif" alt=""></td>
+                            <td><img src="img/logo.webp" id="imgNails"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <!-- 
+            
+            <div id="NClientes"><h2 id="h2Client" hidden>Nuestros Clientes</h2></div>
+            <div id="Clientes1"></div>
+            <div id="Clientes2"></div>
+            <div id="Clientes3"></div>
 
-                
-
-            <input type="button" value="Enviar" onclick="enviar()" class="btn">
-            -->
+            <input type="button" value="Enviar" onclick="enviar(nom.value, ape.value, tel.value)" class="btn" id="btnEnviar">           
+            <input type="button" value="Ver Clientes" onclick="clientes()" class="btn" id="btnClientes">        
         </div>
     </form>
 </body>
