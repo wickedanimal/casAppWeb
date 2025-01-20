@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 010725 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Creacion de hoja de estilos CSS -->
     <link rel="stylesheet" href="style/stylesheet.css">
+    <script src="js/func.js"></script>
     <!-- Link que llama a Google Fonts para utilizarlos en la hoja de estilo -->
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
     <title>Flores a Domicilio</title>
@@ -36,19 +38,19 @@
                 <legend>Ramo</legend>
                 <div class="uno">
                     <div>
-                        <input type="radio" name="ramo" checked/>Rosas Rojas
+                        <input type="radio" name="ramo" value="0" checked onclick="floresSel(this)"/>Rosas Rojas
                     </div>
                     <div>
-                        <input type="radio" name="ramo"/>Rosas Rosas
+                        <input type="radio" name="ramo" value="1"  onclick="floresSel(this)"/>Rosas Rosas
                     </div>
                     <div>
-                        <input type="radio" name="ramo"/>Rosas Amarillas
+                        <input type="radio" name="ramo" value="2"  onclick="floresSel(this)"/>Rosas Amarillas
                     </div>
                     <div>
-                        <input type="radio" name="ramo"/>Rosas Blancas
+                        <input type="radio" name="ramo" value="3"  onclick="floresSel(this)"/>Rosas Blancas
                     </div>
                     <div>
-                        <input type="radio" name="ramo"/>Rosas Multicolor
+                        <input type="radio" name="ramo" value="4"  onclick="floresSel(this)"/>Rosas Multicolor
                     </div>
                 </div>
                 <label>Elige el color de la tarjeta y los complementos que deseas añadir:</label>
