@@ -1,0 +1,1 @@
+let enviar = () => alert("Bienvenido")
