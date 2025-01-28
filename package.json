@@ -1,0 +1,21 @@
+{
+  "name": "casappweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node js/index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wickedanimal/casAppWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wickedanimal/casAppWeb/issues"
+  },
+  "homepage": "https://github.com/wickedanimal/casAppWeb#readme",
+  "description": ""
+}
