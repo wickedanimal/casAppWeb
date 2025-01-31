@@ -1,0 +1,134 @@
+﻿*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family: Tahoma;
+}
+#cabecera{
+	width:100%;
+	background:#22282E;
+	height:60px;
+	position:relative;
+	z-index:2;
+}
+/*El logo*/
+#logo{
+	background:url(../imgs/logo_menu_responsive.png);
+	width:82px;
+	height:46px;
+	float:left;
+	margin:6px 10px;
+}
+/*Menú de navegación*/
+#menu_nav{
+	float:right;
+}
+#menu_nav ul{
+	list-style-type:none;
+	font-size:14px;
+}
+#menu_nav ul li{
+	display:inline;
+	float:left;
+	text-transform:uppercase;/*Para poner en mayúsculas*/
+	text-align:center;
+}
+#menu_nav ul li a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	height:60px;
+	line-height:60px;
+	padding:0px 26px;
+}
+#menu_nav ul li a:hover{
+	color:#ffc700;
+	background:#00639c;
+}
+/*Estilos del menú responsive. Por defecto estará oculto*/
+#menu_responsive{
+	display:none;
+	background: url(../imgs/menu.png) no-repeat center center;
+	float:right;
+	width:60px;
+	height:60px;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+/*Contenido*/
+#contenido{
+	width:80%;
+	margin:60px 10%;
+	text-align:center;
+	overflow:hidden;
+}
+h2{
+	font-size:50px;
+	font-weight:600;
+	text-transform:uppercase;
+	color:#624c3f;
+}
+/*MEDIA QUERY*/
+
+
+/* creacion de media query para pantallas y dispositivos menores a 768px */
+@media only screen and (max-width:768px){
+	h2{
+		font-size: 35px;
+	}
+	/* se muestra el icono de menu que previamente estaba oculto */
+	#menu_responsive{
+		display: block;
+	}
+	/* Se extiende el tamano del nav al 100% */
+	#menu_nav{
+		width: 100%;
+		float: none;
+		padding-top: 60px;
+	}
+	/* el texto se ocultara si se reduce el ancho */
+	#menu_nav ul{
+		box-shadow: 0 1px 2px #333;
+		overflow: hidden;
+		background: #db5c13;
+		max-height: 0;
+		-webkit-box-shadow:0 1px 2px #333;
+		-moz-box-shadow:0 1px 2px #333;
+	}
+	#menu_nav ul li {
+		border-bottom: 1px solid crimson;
+		float: none;
+	}
+	/* se elimina el borde del ultimo elemento */
+	#menu_nav ul li:last-child {
+		border-bottom: 0px;
+	}
+	#menu_nav ul li a{
+		padding: 15px 0;
+		height: auto;
+		line-height: normal;
+	}
+	/* se genera la animacion de transicion del menu una vez que se hace click al icono */
+	#menu_nav ul.menu_nav_abierto{
+		max-height: 400px;
+		transition:  max-height 0.4s;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

@@ -1,0 +1,70 @@
+body{
+    font-family:Arial;
+    font-size:14px;
+}
+h1{
+    font-size:35px;
+}
+/****ESTRUCTURA****/
+main{
+    padding: 5px;
+    width:960px;
+    margin:20px auto;
+}
+header{
+    height:180px;
+}
+section{
+    width:600px;
+    float:left;
+    background: #f8f8f8;
+    display: block;
+}
+aside{
+    width:300px;
+    float:right;
+    background: #f0fefe;
+}
+footer{
+    clear:both; /*hacemos que no haya nada a los lados*/
+}
+header, section, aside{
+    margin-bottom: 5px;
+}
+main, header, section, aside, footer{
+    border: 1px solid #ccc;
+}
+
+@media only screen and (max-width:980px) {
+    main{
+        width: 94%;
+    }
+    section{
+        width: 65%;
+    }
+    aside{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    section, aside{
+        width: auto;
+        float: none;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    section{
+        height: auto;
+    }
+    h1{
+        font-size: 20px;
+    }
+    aside{
+        display: none;
+    }
+}
