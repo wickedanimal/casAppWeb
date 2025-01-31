@@ -1,0 +1,46 @@
+﻿<html>
+
+<head>
+	<title>Menú responsive</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="cabecera">
+		<a href="#" id="logo"></a>
+		<div id="menu_nav">
+			<!--La siguiente línea corresponde al botón del menú. Por defecto estará oculto-->
+			<a href="#" class="menu_responsive" id="menu_responsive"></a>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Encuéntranos</a></li>
+				<li><a href="#">Cursos</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="contenido">
+		<h2>MENÚ RESPONSIVE</h2>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			/* Se crea las variables que accederan a los elementos de la pagina para poder luego usarlos.
+			 */
+			let btn_movil = $('#menu_responsive'),
+				menu_nav = $('#menu_nav').find('ul');
+			/*  Esto previene que exista la un link disponible a ese elemento*/
+			btn_movil.on("click", function (e) {
+				e.preventDefault();
+
+				// let el = $(this);
+			/*  Va a generar el despliegue del Menu Nav una vez que la pagina se menor que 769px*/
+				menu_nav.toggleClass('menu_nav_abierto');
+			})
+		});
+	</script>
+</body>
+
+</html>
