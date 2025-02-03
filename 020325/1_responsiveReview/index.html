@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/func.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Responsive Review</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <div id="bgHeader"></div>
+            <nav>
+                <a href="#" class="menu_responsive" id="menu_responsive"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="pol-1" class="polaroid">
+                <img src="img/cross.jpg" alt="">
+                <h2>Motocicletas de Cross</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates excepturi magnam adipisci
+                    deserunt officia mollitia, dolorum ut consequatur ipsam amet eveniet enim natus. Possimus, quo?
+                    Cupiditate ratione in esse culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veniam qui porro ullam consectetur</p>
+                <br>
+                <p>Rem error quae consequuntur dignissimos iusto et eum iste, ducimus, harum dolorum! Veritatis tempora laborum quisquam!</p>
+            </div>
+            <div id="pol-2" class="polaroid">
+                <img src="img/vintage.jpg" alt="">
+                <h2>Motocicletas vintage</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nobis accusamus velit doloremque necessitatibus sapiente non nesciunt autem neque culpa quia.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem ratione, fugiat soluta ab sed reiciendis officia aperiam a esse! Vel autem quo labore illum modi natus eum tempore alias? eaque vero molestias, tempore libero ducimus repudiandae aut nostrum!
+                </p>
+            </div>
+            <div id="pol-3" class="polaroid">
+                <img src="img/carretera.jpg" alt="">
+                <h2>Motocicletas de carretera</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique aliquam adipisci velassumenda officia minima, voluptates deserunt nemo alias amet rem quisquam pariatur repellendus quibusdam sed autem dignissimos omnis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, libero placeat voluptas illum
+                    harum consectetur odio doloribus quaerat ipsam impedit quia aliquid hic maiores quos sapiente
+                    voluptatum, eveniet nesciunt exercitationem?</p>
+            </div>
+        </main>
+
+        <footer>
+            <P>Designed and developed by NDS</P>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			/* Se crea las variables que accederan a los elementos de la pagina para poder luego usarlos.
+			 */
+			let btn_movil = $('#menu_responsive'),
+				menu_nav = $('nav').find('ul');
+			/*  Esto previene que exista la un link disponible a ese elemento*/
+			btn_movil.on("click", function (e) {
+				e.preventDefault();
+
+				// let el = $(this);
+			/*  Va a generar el despliegue del Menu Nav una vez que la pagina se menor que 769px*/
+				menu_nav.toggleClass('menu_nav_abierto');
+			})
+		});
+	</script>
+</body>
+
+</html>
