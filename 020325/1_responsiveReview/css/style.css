@@ -187,7 +187,6 @@ nav ul li:last-child {
 	nav ul li a{
         padding: 15px 0;
 		height: auto;
-		line-height: normal;
 	}
 	/* se genera la animacion de transicion del menu una vez que se hace click al icono */
 	nav ul.menu_nav_abierto{
