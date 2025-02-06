@@ -24,6 +24,7 @@
 
             </div>
             <nav>
+                <a href="#" class="menu_responsive" id="menu_responsive"></a>
                 <ul id="nav1">
                     <li><a href="index.html" id="navActive">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -39,7 +40,7 @@
         <main>
             <section>
                 <article>
-                    <img src="img/b1.jpg" alt="">
+                    <img src="img/b1.jpg" alt="Image del Postre Choco Canela">
                     <div id="par">
                         <h2>Choco Canela</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto, accusamus reiciendis
@@ -54,7 +55,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="img/b2.jpg" alt="">
+                    <img src="img/b2.jpg" alt="Imagen del Cafe latte">
                     <div id="par">
                         <h2>Cafe latte</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit placeat, repellat
@@ -70,9 +71,9 @@
                     </div>
                 </article>
                 <article>
-                    <img src="img/b3.jpg" alt="">
+                    <img src="img/b3.jpg" alt="Imagen de los postres Nutri Cupcakes">
                     <div id="par">
-                        <h2>Nutri Cupcake</h2>
+                        <h2>Nutri Cupcakes</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit placeat, repellat
                             ratione doloremque modi sunt, corrupti, libero quos dolores nam velit praesentium voluptatum
                             quis laborum! Consequatur sed iure quam quidem.
@@ -90,6 +91,25 @@
             <p>Designed and developed by CAZ</p>
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			/* Se crea las variables que accederan a los elementos de la pagina para poder luego usarlos.
+			 */
+			let btn_movil = $('#menu_responsive'),
+				menu_nav = $('nav').find('ul');
+			/*  Esto previene que exista la un link disponible a ese elemento*/
+			btn_movil.on("click", function (e) {
+				e.preventDefault();
+
+				// let el = $(this);
+			/*  Va a generar el despliegue del Menu Nav una vez que la pagina se menor que 769px*/
+				menu_nav.toggleClass('menu_nav_abierto');
+			})
+		});
+	</script>
+
 </body>
 
 </html>
