@@ -1,3 +1,5 @@
+/* Reduccion de elementos en el h1 para que se acomode en una pantalla mas estrecha y se vea correctamente */
+
 @media only screen and (max-width:980px) {
 
     header {
@@ -9,6 +11,7 @@
     }
 }
 
+/* Reduccion de elementos ya que la pantalla es minima*/
 @media only screen and (max-width:750px) {
     footer {
         display: none;
@@ -19,6 +22,7 @@
         height: 300px;
     }
 
+    /* Creacion de menu oculto y cambio de estilos para que elementos se coloquen en los lugares adecuados */
     header {
         h1 {
             transform: translate(-50%, -35%);
@@ -68,6 +72,8 @@
         }
     }
 
+    /* Expansion a pantalla completa de section y formulario
+    Eliminacion de images de los articulos */
     main {
         position: unset;
 

@@ -25,35 +25,35 @@
             <nav>
                 <a href="#" class="menu_responsive" id="menu_responsive"></a>
                 <ul id="nav1">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html" id="navActive">Contact</a></li>
+                    <li><a href="index.html" tabindex="0">Home</a></li>
+                    <li><a href="contact.html" id="navActive" tabindex="1">Contact</a></li>
                 </ul>
                 <ul id="nav2">
-                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#X"><span hidden>Red Social X</span><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#Facebook"><span hidden>Red Social Facebook</span><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#Instagram"><span hidden>Red Social Instagram</span><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
 
-            <form action="" id="myForm">
+            <form action="" id="myForm"  autocomplete="on">
                 <label class="normText">
                     <p>Nombre y Apellidos <span class="prio">*</span></p>
-                    <input type="text" name="fnom" id="fnom" placeholder="Camilo Ramirez Alvarez"></label>
+                    <input type="text" name="fnom" id="fnom" placeholder="Camilo Ramirez Alvarez" autofocus></label>
                 <label class="normText">
                     <p>Email <span class="prio">*</span> </p>
-                    <input type="email" name="fmail" id="fmail" placeholder="cralvarez@email.com"></label>
+                    <input type="email" name="fmail" id="fmail" placeholder="cralvarez@email.com" tabindex="2"></label>
                 <label class="normText">
                     <p>Telefono <span class="prio">*</span></p>
-                    <input type="tel" name="ftel" id="ftel" placeholder="+34 613 123 456"></label>
+                    <input type="tel" name="ftel" id="ftel" placeholder="+34 613 123 456" tabindex="3"></label>
                 <label class="normText" id="mensaje">
                     <p>Mensaje <span class="prio">*</span></p>
-                    <input type="text" name="fmensaje" id="fmensaje" placeholder="Que deseas contarnos"></label>
-                <input type="checkbox" name="fterms" id="fterms">
-                <label for="" id="terms">He leido y acepto los <a href="">terminos de servicio</a></label>
-                <input type="button" value="Enviar" onclick="enviar(fnom.value, fmail.value, ftel.value, fmensaje.value, fterms.checked)">
+                    <input type="text" name="fmensaje" id="fmensaje" placeholder="Que deseas contarnos" tabindex="4"></label>
+                <input type="checkbox" name="fterms" id="fterms" tabindex="5">
+                <label for="" id="terms">He leido y acepto los <a href="#terminoServicio" tabindex="6">terminos de servicio</a></label>
+                <input type="button" value="Enviar" onclick="enviar(fnom.value, fmail.value, ftel.value, fmensaje.value, fterms.checked)" tabindex="7">
             </form>
         </main>
 
