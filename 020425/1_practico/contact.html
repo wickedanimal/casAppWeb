@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mq.css">
+    <script src="js/contact.js"></script>
     <script src="https://kit.fontawesome.com/58b982c2c4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -22,6 +23,7 @@
                 <h1>Sweet Coffee</h1>
                 <div id="bgHeaderContacto"></div>
             <nav>
+                <a href="#" class="menu_responsive" id="menu_responsive"></a>
                 <ul id="nav1">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="contact.html" id="navActive">Contact</a></li>
@@ -35,21 +37,23 @@
         </header>
 
         <main>
+
             <form action="" id="myForm">
-                <label>
-                    <span>Nombre y Apellidos</span>
-                    <input type="text" name="" placeholder="Camilo Ramirez Alvarez"></label>
-                <label><span>Email</span>
-                    <input type="email" name="" placeholder="cralvarez@email.com"></label>
-                <label>
-                    <span>Telefono</span>
-                    <input type="tel" name="" placeholder="+34 613 123 456"></label>
-                <label>
-                    <span>Mensaje</span>
-                    <input type="text" name="" placeholder="Que deseas contarnos"></label>
-                <input type="checkbox" name="" id="">
-                <label for="">He leido y acepto los <span>terminos de servicio</span></label>
-                <input type="button" value="Enviar">
+                <label class="normText">
+                    <p>Nombre y Apellidos <span class="prio">*</span></p>
+                    <input type="text" name="fnom" id="fnom" placeholder="Camilo Ramirez Alvarez"></label>
+                <label class="normText">
+                    <p>Email <span class="prio">*</span> </p>
+                    <input type="email" name="fmail" id="fmail" placeholder="cralvarez@email.com"></label>
+                <label class="normText">
+                    <p>Telefono <span class="prio">*</span></p>
+                    <input type="tel" name="ftel" id="ftel" placeholder="+34 613 123 456"></label>
+                <label class="normText" id="mensaje">
+                    <p>Mensaje <span class="prio">*</span></p>
+                    <input type="text" name="fmensaje" id="fmensaje" placeholder="Que deseas contarnos"></label>
+                <input type="checkbox" name="fterms" id="fterms">
+                <label for="" id="terms">He leido y acepto los <a href="">terminos de servicio</a></label>
+                <input type="button" value="Enviar" onclick="enviar(fnom.value, fmail.value, ftel.value, fmensaje.value, fterms.checked)">
             </form>
         </main>
 
@@ -57,6 +61,26 @@
             <p>Designed and developed by CAZ</p>
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			/* Se crea las variables que accederan a los elementos de la pagina para poder luego usarlos.
+			 */
+			let btn_movil = $('#menu_responsive'),
+				menu_nav = $('nav').find('ul');
+			/*  Esto previene que exista la un link disponible a ese elemento*/
+			btn_movil.on("click", function (e) {
+				e.preventDefault();
+
+				// let el = $(this);
+			/*  Va a generar el despliegue del Menu Nav una vez que la pagina se menor que 769px*/
+				menu_nav.toggleClass('menu_nav_abierto');
+			})
+		});
+	</script>
+
+
 </body>
 
 </html>
